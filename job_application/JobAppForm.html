@@ -1,0 +1,339 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+<body>
+	<img src="images/piwBlackLogo.jpg" alt="Poynette Ironworks Inc." style="margin-left:285px; width:800px;height:200px;">
+	<h1 style="margin-left: 525px;">Employment Application</h1>
+	<form name="JobAppform" method="post" action="JobApp_form_email.php" enctype="multipart/form-data" style="margin-left: 300px;font-family: arial; font-size:12pt" width="800px">
+			<table><br>
+				<th colspan="6" align="left" bgcolor="#B8B8B8" style="padding-left:15px; font-size:15pt" width="820px" height="40">PERSONAL INFORMATION</th>
+				<tr><td>Date of Application*<br>
+						<input style="font-size:12pt" type="text" id="dateOfApp_Month" name="dateOfApp_Month" 
+							placeholder="Month" size="2" maxlength="2" required />
+						<input class="placeholder" style="font-size:12pt" type="text" id="dateOfApp_Day" name="dateOfApp_Day" 
+							placeholder="Day" size="2" maxlength="2" required />
+						<input class="placeholder" style="font-size:12pt" type="text" id="dateOfApp_Year" name="dateOfApp_Year" 
+							placeholder="Year" size="4" maxlength="4" required /></td>
+					<td>Position Applying for*<br>
+						<input type="text" style="font-size:12pt" id="AppPosition" class="placeholder" 
+							name="AppPosition" placeholder="Welder, Painter, CDL Driver, ect." size="35" required /></td></tr>
+				<td><br>Name & Address*</td></tr>
+						<tr><td colspan="5"><input type="text" id="fNameApp"  
+									name="fNameApp" placeholder="First" style="font-size:12pt" required />
+								<input type="text" id="mInitialApp" name="mInitialApp" 
+									placeholder="MI" size="4" style="font-size:12pt" required />
+								<input type="text" id="lNameApp" name="lNameApp" size="35" 
+									placeholder="Last" style="font-size:12pt" required /></td></tr>
+						<tr><td colspan="4"><input type="text" id="street1App" name="street1App" 
+							placeholder="Street 1" size="70" style="font-size:12pt" required /></tr>
+						<tr><td colspan="4"><input type="text" id="street2App" name="street2App" 
+							placeholder="Street 2" size="70" style="font-size:12pt" /></tr>
+						<tr><td colspan="4"><input type="text" id="cityApp"name="cityApp" 
+							placeholder="City"size ="25" style="font-size:12pt"  required />
+								<input type="text" id="STApp" name="STApp" size="2" 
+									maxlength="2" placeholder="ST" style="font-size:12pt"  required  />
+								<input type="text" id="zipApp" name="zipApp" size="5" 
+									maxlength="5" placeholder="Zip" style="font-size:12pt"  required  /></td></</tr>
+						<tr><td colspan="3">Phone* <input type="tel" id="phone1App" name="phone1App" 
+									size="12" maxlength="12" placeholder="xxx-xxx-xxxx" style="font-size:12pt"  required  />
+								&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Phone 2 <input type="tel" id="phone2App" name="phone2App" 
+									size="12" maxlength="12" placeholder="xxx-xxx-xxxx" style="font-size:12pt" /></td></tr>
+						<tr><td colspan="6">Email <input type="email" id="emailApp" name="emailApp" 
+								placeholder="ex: myname@example.com" size="45" style="font-size:12pt" required /></tr>
+				<tr><td><br>Start Date<br><input type="text" id="startDate_Month" 
+							name="startDate_Month" placeholder="Month" size="2" maxlength="2" style="font-size:12pt" />
+							<input type="text" id="startDate_Day" name="startDate_Day" 
+								placeholder="Day" size="2" maxlength="2" style="font-size:12pt" />
+							<input type="text" id="startDate_Year" name="startDate_Year" 
+								placeholder="Year" size="4" maxlength="4" style="font-size:12pt" /></td>
+					<td><br>Desired Salary<br> <input type="text" id="desiredSalary" style="font-size:12pt"name="desiredSalary" 
+							maxlength="12" /></td></tr>
+				<tr><td colspan="6"><br>If you are under 18, and it is required, can you furnish a work permit?*
+					<input type="radio" name="workPermit" value="Yes" required >Yes
+					<input type="radio" name="workPermit" value="No" required >No
+					<input type="radio" name="workPermit" value="NA" required >NA</td></tr>
+				<tr><td colspan="6">If no, please explain <input type="text" id="workPermitNo" 
+						name="workPermitNo" size="45"style="font-size:12pt" /></td></tr>
+				<tr><td colspan="6"><br>Have you ever been employed here before?*
+					<input type="radio" name="workHere" value="Yes" required >Yes
+					<input type="radio" name="workHere" value="No" required >No</td></tr>
+				<tr><td colspan="6">If yes, give dates & positions <input type="text" id="workHereYes" 
+						name="workHereYes" size="45" style="font-size:12pt" /></td></tr>
+				<tr><td colspan="6"><br>Are you legally eligible for employment in this country?*
+					<input type="radio" name="workLegally" value="Yes" required >Yes
+					<input type="radio" name="workLegally" value="No" required >No</td></tr>
+				<tr><td colspan="6"><br>Have you ever pled "guilty" or "no contest" to, or been convicted of a crime?*
+					<input type="radio" name="convictedCrime" value="Yes" required >Yes
+					<input type="radio" name="convictedCrime" value="No" required >No</td></tr>
+				<tr><td colspan="6">If yes, please provide date(s) and details <input type="text" id="convictedCrimeYes" 
+						name="convictedCrimeYes" size="45" style="font-size:12pt" /></td></tr>
+				<tr><td colspan="6" style="font-size:10pt" >Answering "yes" to these questions does not constitute an 
+					automatic bar of employment.Factors such as date of the offense,<br> 
+					seriousness and nature of the violation, rehabilitation and 
+					position applied for will be taken into account.</td></tr>
+			</table><br>
+			<table>
+				<th colspan="6" align="left" bgcolor="#B8B8B8" style="padding-left:15px; font-size:15pt" width="820px" height="40">EMPLOYMENT HISTORY</th>
+				<tr><td>Start Date<br><input type="text" id="startDate1_Month" 
+							name="empStartDate1_Month" placeholder="Month" size="2" maxlength="2" placeholder="" style="font-size:12pt" />
+							<input type="text" id="empStartDate1_Year" name="empStartDate1_Year" 
+								placeholder="Year" size="4" maxlength="4" placeholder="" style="font-size:12pt" /></td>
+					<td>End Date<br><input type="text" id="empEndDate1_Month" 
+							name="empEndDate1_Month" placeholder="Month" size="2" maxlength="2" placeholder="" style="font-size:12pt" />
+							<input type="text" id="empEndDate1_Year" name="empEndDate1_Year" 
+								placeholder="Year" size="4" maxlength="4" placeholder="" style="font-size:12pt" /></td></tr>
+				<tr><td>Employeer Name & Address</td></tr>
+				<tr><td colspan="4"><input type="text" id="empName1"  
+						name="empName1" placeholder="Name" size="45" style="font-size:12pt" /></tr>
+				<tr><td colspan="4"><input type="text" id="empStreet1" name="empStreet1" 
+						placeholder="Street" size="45" style="font-size:12pt" /></tr>
+				<tr><td colspan="4"><input type="text" id="empCity1" name="empCity1" 
+						placeholder="City" style="font-size:12pt" />
+						<input type="text" id="empST1" name="empST1" size="2" 
+							maxlength="2" placeholder="ST" style="font-size:12pt" />
+						<input type="text" id="empZip1" name="empZip1" size="5" 
+							maxlength="5" placeholder="Zip" style="font-size:12pt" /></td></</tr>
+				<tr><td>Phone <input type="tel" id="empPhone1" name="empPhone1" 
+							size="12" maxlength="12" placeholder="xxx-xxx-xxxx" style="font-size:12pt" /></td></tr>
+				<tr><td colspan="2">Immediate Supervisor & Title<br> 
+							<input type="text" id="empSup1" name="empSup1" 
+								size="35" style="font-size:12pt" /></td>
+					<td><br>May we contact for reference?
+					<input type="radio" name="empRef1" value="Yes">Yes
+					<input type="radio" name="empRef1" value="No" >No</td></tr>
+				<tr><td colspan="2">Job Title<br> <input type="text" 
+							id="empJobTitle1" name="empJobTitle1" size="25" style="font-size:12pt" /></td>
+					<td>Ending Salary<br> <input type="text" id="endSalary1" name="endSalary1" 
+							size="25" style="font-size:12pt" /></td></tr>
+				<tr><td colspan="5">Summarize work preformed & job responsibilities<br> 
+							<input type="text" id="empDuties1" 
+								name="empDuties1" style="height:40px;"size="80" style="font-size:12pt" /></td></tr>
+				<tr><td colspan="5">Reason for Leaving <input type="text" 
+							id="empLeaving1" name="empLeaving1" size="60" style="font-size:12pt" /></td></tr>
+			</table><hr align="left" width="835px" noshade size="3px">
+			<table>
+				<tr><td>Start Date<br><input type="text" id="startDate2_Month" 
+							name="empStartDate2_Month" placeholder="Month" size="2" maxlength="2" style="font-size:12pt" />
+							<input type="text" id="empStartDate2_Year" name="empStartDate2_Year" 
+								placeholder="Year" size="4" maxlength="4" style="font-size:12pt" /></td>
+					<td>End Date<br><input type="text" id="empEndDate2_Month" 
+							name="empEndDate2_Month" placeholder="Month" size="2" maxlength="2" placeholder="" style="font-size:12pt" />
+							<input type="text" id="empEndDate2_Year" name="empEndDate2_Year" 
+								placeholder="Year" size="4" maxlength="4" style="font-size:12pt" /></td></tr>
+				<tr><td>Employeer Name & Address</td></tr>
+				<tr><td colspan="4"><input type="text" id="empName2"  
+						name="empName2" placeholder="Name" size="45" style="font-size:12pt" /></tr>
+				<tr><td colspan="4"><input type="text" id="empStreet2" name="empStreet2" 
+						placeholder="Street" size="45" style="font-size:12pt" /></tr>
+				<tr><td colspan="4"><input type="text" id="empCity2" name="empCity2" 
+						placeholder="City" style="font-size:12pt" />
+						<input type="text" id="empST2" name="empST2" size="2" 
+							maxlength="2" placeholder="ST" style="font-size:12pt" />
+						<input type="text" id="empZip2" name="empZip2" size="5" 
+							maxlength="5" placeholder="Zip" style="font-size:12pt" /></td></</tr>
+				<tr><td>Phone <input type="tel" id="empPhone2" name="empPhone2" 
+							size="12" maxlength="12" placeholder="xxx-xxx-xxxx" style="font-size:12pt" /></td></tr>
+				<tr><td colspan="2">Immediate Supervisor & Title<br> 
+							<input type="text" id="empSup2" name="empSup2" 
+								size="35" style="font-size:12pt" /></td>
+					<td><br>May we contact for reference?
+					<input type="radio" name="empRef2" value="Yes">Yes
+					<input type="radio" name="empRef2" value="No" >No</td></tr>
+				<tr><td colspan="2">Job Title<br> <input type="text" 
+							id="empJobTitle2" name="empJobTitle2" size="25" style="font-size:12pt" /></td>
+					<td>Ending Salary<br> <input type="text" id="endSalary2" name="endSalary2" 
+							size="25" style="font-size:12pt" /></td></tr>
+				<tr><td colspan="5">Summarize work preformed & job responsibilities<br> 
+							<input type="text" id="empDuties2" 
+								name="empDuties2" style="height:40px;"size="80" style="font-size:12pt" /></td></tr>
+				<tr><td colspan="5">Reason for Leaving <input type="text" 
+							id="empLeaving2" name="empLeaving2" size="60" style="font-size:12pt" /></td></tr>
+			</table><hr align="left" width="835px" noshade size="3px">
+			<table>
+				<tr><td>Start Date<br><input type="text" id="startDate3_Month" 
+							name="empStartDate3_Month" placeholder="Month" size="2" maxlength="2" style="font-size:12pt" />
+							<input type="text" id="empStartDate3_Year" name="empStartDate3_Year" 
+								placeholder="Year" size="4" maxlength="4" style="font-size:12pt" /></td>
+					<td>End Date<br><input type="text" id="empEndDate3_Month" 
+							name="empEndDate3_Month" placeholder="Month" size="2" maxlength="2" style="font-size:12pt"  />
+							<input type="text" id="empEndDate3_Year" name="empEndDate3_Year" 
+								placeholder="Year" size="4" maxlength="4" style="font-size:12pt" /></td></tr>
+				<tr><td>Employeer Name & Address</td></tr>
+				<tr><td colspan="4"><input type="text" id="empName3"  
+						name="empName3" placeholder="Name" size="45" style="font-size:12pt" /></tr>
+				<tr><td colspan="4"><input type="text" id="empStreet3" name="empStreet3" 
+						placeholder="Street" size="45" style="font-size:12pt" /></tr>
+				<tr><td colspan="4"><input type="text" id="empCity3" name="empCity3" 
+						placeholder="City" style="font-size:12pt" />
+						<input type="text" id="empST3" name="empST3" size="2" 
+							maxlength="2" placeholder="ST" style="font-size:12pt" />
+						<input type="text" id="empZip3" name="empZip3" size="5" 
+							maxlength="5" placeholder="Zip" style="font-size:12pt" /></td></</tr>
+				<tr><td>Phone <input type="tel" id="empPhone3" name="empPhone3" 
+							size="12" maxlength="12" placeholder="xxx-xxx-xxxx" style="font-size:12pt" /></td></tr>
+				<tr><td colspan="2">Immediate Supervisor & Title<br> 
+							<input type="text" id="empSup3" name="empSup3" 
+								size="35" style="font-size:12pt" /></td>
+					<td><br>May we contact for reference?
+					<input type="radio" name="empRef3" value="Yes">Yes
+					<input type="radio" name="empRef3" value="No" >No</td></tr>
+				<tr><td colspan="2">Job Title<br> <input type="text" 
+							id="empJobTitle3" name="empJobTitle3" size="25" style="font-size:12pt" /></td>
+					<td>Ending Salary<br> <input type="text" id="endSalary3" name="endSalary3" 
+							size="25" style="font-size:12pt" /></td></tr>
+				<tr><td colspan="5">Summarize work preformed & job responsibilities<br> 
+							<input type="text" id="empDuties3" 
+								name="empDuties3" style="height:40px;"size="80" style="font-size:12pt" /></td></tr>
+				<tr><td colspan="5">Reason for Leaving <input type="text" 
+							id="empLeaving3" name="empLeaving3" size="60" style="font-size:12pt" /></td></tr>
+			</table><hr align="left" width="835px" noshade size="3px">
+			<table>
+				<tr><td>Start Date<br><input type="text" id="startDate4_Month" 
+							name="empStartDate4_Month" placeholder="Month" size="2" maxlength="2" style="font-size:12pt" />
+							<input type="text" id="empStartDate4_Year" name="empStartDate4_Year" 
+								placeholder="Year" size="4" maxlength="4" style="font-size:12pt" style="font-size:12pt" /></td>
+					<td>End Date<br><input type="text" id="empEndDate4_Month" 
+							name="empEndDate4_Month" placeholder="Month" size="2" maxlength="2" style="font-size:12pt" />
+							<input type="text" id="empEndDate4_Year" name="empEndDate4_Year" 
+								placeholder="Year" size="4" maxlength="4" style="font-size:12pt" /></td></tr>
+				<tr><td>Employeer Name & Address</td></tr>
+				<tr><td colspan="4"><input type="text" id="empName4"  
+						name="empName4" placeholder="Name" size="45" style="font-size:12pt" /></tr>
+				<tr><td colspan="4"><input type="text" id="empStreet4" name="empStreet4" 
+						placeholder="Street" size="45" style="font-size:12pt" /></tr>
+				<tr><td colspan="4"><input type="text" id="empCity4" name="empCity4" 
+						placeholder="City" style="font-size:12pt" />
+						<input type="text" id="empST4" name="empST4" size="2" 
+							maxlength="2" placeholder="ST" style="font-size:12pt" />
+						<input type="text" id="empZip4" name="empZip4" size="5" 
+							maxlength="5" placeholder="Zip" style="font-size:12pt" /></td></</tr>
+				<tr><td>Phone <input type="tel" id="empPhone4" name="empPhone4" 
+							size="12" maxlength="12" placeholder="xxx-xxx-xxxx" style="font-size:12pt" /></td></tr>
+				<tr><td colspan="2">Immediate Supervisor & Title<br> 
+							<input type="text" id="empSup4" name="empSup4" 
+								size="35" style="font-size:12pt" /></td>
+					<td><br>May we contact for reference?
+					<input type="radio" name="empRef4" value="Yes">Yes
+					<input type="radio" name="empRef4" value="No" >No</td></tr>
+				<tr><td colspan="2">Job Title<br> <input type="text" 
+							id="empJobTitle4" name="empJobTitle4" size="25" style="font-size:12pt" /></td>
+					<td>Ending Salary<br> <input type="text" id="endSalary4" name="endSalary4" 
+							size="25" style="font-size:12pt" /></td></tr>
+				<tr><td colspan="5">Summarize work preformed & job responsibilities<br> 
+							<input type="text" id="empDuties4" 
+								name="empDuties4" style="height:40px;"size="80" style="font-size:12pt" /></td></tr>
+				<tr><td colspan="5">Reason for Leaving <input type="text" 
+							id="empLeaving4" name="empLeaving4" size="60" style="font-size:12pt" /></td></tr>
+			</table><br>
+			<table>
+				<th colspan="6" align="left" bgcolor="#B8B8B8" style="padding-left:15px; font-size:15pt" width="800px" height="40">SKILLS & QUALIFICATIONS</th>
+				<tr><td colspan="6">Summarize any training, skills, licenses and/or 
+										certificates that may qualify you as being able
+										to preform job-related <br>functions in the
+										position for which you are applying.<br> 
+							<input type="text" id="skillsQual" 
+								name="skillsQual" style="height:60px;"size="115" style="font-size:12pt" /></td></tr>
+				
+			</table><br>
+			<table>
+				<th colspan="6" align="left" bgcolor="#B8B8B8" style="padding-left:15px; font-size:15pt" width="800px" height="40">EDUCATIONAL BACKGROUND</th>
+				<tr><td colspan="3"><br>School<br> 
+							<input type="text" id="school1" name="school1" 
+								placeholder="Name, City & State" size="39" style="font-size:12pt" /></td>
+					<td align="center">Year<br>Completed<br> 
+							<input type="text" id="schoolComp1" name="schoolComp1" 
+								size="4" style="font-size:12pt" /></td>
+					<td><br>Level of Completetion<br> 
+							<input type="text" id="levelComp1" name="levelComp1" 
+								placeholder="Diploma, GED, Degree, ect." style="font-size:12pt" /></td>
+					<td><br>Course of Study<br> 
+							<input type="text" id="courseStudy1" name="courseStudy1" style="font-size:12pt" 
+								 /></td></tr>
+				<tr><td colspan="3"><input type="text" id="school2" name="school2" 
+								placeholder="Name, City & State" size="39" style="font-size:12pt" /></td>
+					<td align="center"><input type="text" id="schoolComp2" name="schoolComp2" 
+								size="4"  style="font-size:12pt"/></td>
+					<td><input type="text" id="levelComp2" name="levelComp2" 
+								placeholder="Diploma, GED, Degree, ect." style="font-size:12pt" /></td>
+					<td><input type="text" id="courseStudy2" name="courseStudy2" style="font-size:12pt"
+								 /></td></tr>
+				<tr><td colspan="3"><input type="text" id="school3" name="school3" 
+								placeholder="Name, City & State" size="39" style="font-size:12pt" /></td>
+					<td align="center"><input type="text" id="schoolComp3" name="schoolComp3" 
+								size="4" style="font-size:12pt" /></td>
+					<td><input type="text" id="levelComp3" name="levelComp3" 
+								placeholder="Diploma, GED, Degree, ect." style="font-size:12pt" /></td>
+					<td><input type="text" id="courseStudy3" name="courseStudy3" style="font-size:12pt"
+								 /></td></tr>
+				<tr><td colspan="3"><input type="text" id="school4" name="school4" 
+								placeholder="Name, City & State" size="39" style="font-size:12pt" /></td>
+					<td align="center"><input type="text" id="schoolComp4" name="schoolComp4" 
+								size="4" style="font-size:12pt" /></td>
+					<td><input type="text" id="levelComp4" name="levelComp4" 
+								placeholder="Diploma, GED, Degree, ect." style="font-size:12pt" /></td>
+					<td><input type="text" id="courseStudy4" name="courseStudy4" style="font-size:12pt"
+								 /></td></tr>
+			</table><br>
+			<table>
+				<th colspan="6" align="left" bgcolor="#B8B8B8" style="padding-left:15px; font-size:15pt" width="800px" height="40">REFERENCES</th>
+				<tr><td colspan="2"><br>Name*<br> 
+							<input type="text" id="refName1" name="refName1" 
+								size="25" style="font-size:12pt"  required  /></td>
+					<td><br>Title*<br> 
+							<input type="text" id="refTitle1" name="refTitle1" 
+								size="18" style="font-size:12pt"  required  /></td>
+					<td><br>Relationship to Candidate*<br> 
+							<input type="text" id="refRelate1" name="refRelate1" 
+								placeholder="Friend, Coworker, ect." style="font-size:12pt" size="20"  required  /></td>
+					<td><br>Phone*<br>  <input type="tel" id="refPhone1" name="refPhone1" 
+							size="12" maxlength="12" placeholder="xxx-xxx-xxxx" style="font-size:12pt"  required  /></td>
+					<td align="center">Years<br>Known*<br>  <input type="text" id="refYears1" name="refYears1" 
+								size="4" style="font-size:12pt"  required  /></td></tr>
+				<tr><td colspan="2"><input type="text" id="refName2" name="refName2" 
+								size="25"  style="font-size:12pt"  required  /></td>
+					<td><input type="text" id="refTitle2" name="refTitle2" 
+								size="18" style="font-size:12pt"  required  /></td>
+					<td><input type="text" id="refRelate2" name="refRelate2" 
+								placeholder="Friend, Coworker, ect." style="font-size:12pt"  required  size="20" /></td>
+					<td><input type="tel" id="refPhone2" name="refPhone2" 
+							size="12" maxlength="12" placeholder="xxx-xxx-xxxx" style="font-size:12pt"  required  /></td>
+					<td><input type="text" id="refYears2" name="refYears2" 
+								size="4" style="font-size:12pt"  required  /></td></tr>
+				<tr><td colspan="2"><input type="text" id="refName3" name="refName3" 
+								size="25" style="font-size:12pt"  required  /></td>
+					<td><input type="text" id="refTitle23" name="refTitle3" 
+								size="18" style="font-size:12pt"  required  /></td>
+					<td><input type="text" id="refRelate3" name="refRelate3" 
+								placeholder="Friend, Coworker, ect." style="font-size:12pt" size="20"  required  /></td>
+					<td><input type="tel" id="refPhone3" name="refPhone3" 
+							size="12" maxlength="12" placeholder="xxx-xxx-xxxx" style="font-size:12pt"  required  /></td>
+					<td><input type="text" id="refYears3" name="refYears3" 
+								size="4" style="font-size:12pt"  required  /></td></tr>
+				
+			</table>
+			<h3> Resume (Optional):</h3>
+				<label for='uploaded_file'></label>
+				<input type="file" name="uploaded_file">
+            <h3>Send Application:</h3>
+            <p>By clicking the submit button below, I cerity that all of the information 
+            	provided by me on this application is true and <br>complete, and I 
+            	understand that if any false information, ommissions, or misrepresentations 
+            	are discovered, my <br>application may be rejected and, if I am employed, 
+            	my employement may be terminated at any time.
+            	In consideration <br>of my employment, I agree to conform to the company's 
+            	rules and regulations, and I agree that my employment<br> and compenstation 
+            	can be terminated, with or without cause,and with or without notice, 
+            	at any time, at either my <br> or the company's option. 
+            	I also understand and agree that the terms and conditions of my 
+            	employment may be changed,<br> with or without cause, and with or without
+            	notice, at any time by the company.</p>
+            <button id="submit" type="submit">Submit</button>
+
+			
+	</form>
+
+
+</body>
+</head>
+</html>
